@@ -1,0 +1,7 @@
+Builds:
+  - versionName: '1.0.0'
+    versionCode: 10
+    commit: HEAD
+    subdir: app
+    gradle:
+      - yes
