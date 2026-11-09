@@ -1,0 +1,72 @@
+# Copyright 2026 SadmanWasi
+# SPDX-License-Identifier: Apache-2.0
+
+name: Android CI & Release Verification
+
+on:
+  push:
+    branches: [ "main", "master" ]
+    tags: [ "v*" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    name: Unit Tests, Lint & APK/AAB Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Gradle with Dependency Caching
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Grant Execute Permission for Gradlew
+        run: chmod +x gradlew
+
+      - name: Run Unit Tests (2019 Bangla Academy Engine & ViewModel)
+        run: ./gradlew testDebugUnitTest --stacktrace
+
+      - name: Compile Instrumented UI Tests
+        run: ./gradlew compileDebugAndroidTestKotlin --stacktrace
+
+      - name: Run Android Lint (Debug & Release Vital)
+        run: ./gradlew lintDebug lintVitalRelease --stacktrace
+
+      - name: Assemble Debug APK, Release APK, and Release AAB
+        run: ./gradlew assembleDebug assembleRelease bundleRelease --stacktrace
+
+      - name: Generate SHA-256 Checksums
+        run: |
+          sha256sum app/build/outputs/apk/debug/*.apk > app/build/outputs/SHA256SUMS.txt
+          sha256sum app/build/outputs/apk/release/*.apk >> app/build/outputs/SHA256SUMS.txt
+          sha256sum app/build/outputs/bundle/release/*.aab >> app/build/outputs/SHA256SUMS.txt
+          cat app/build/outputs/SHA256SUMS.txt
+
+      - name: Upload Unit Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unit-test-reports
+          path: app/build/reports/tests/testDebugUnitTest/
+
+      - name: Upload Build Artifacts (APK, AAB & SHA256SUMS)
+        uses: actions/upload-artifact@v4
+        with:
+          name: dinkhon-build-artifacts
+          path: |
+            app/build/outputs/apk/debug/*.apk
+            app/build/outputs/apk/release/*.apk
+            app/build/outputs/bundle/release/*.aab
+            app/build/outputs/SHA256SUMS.txt

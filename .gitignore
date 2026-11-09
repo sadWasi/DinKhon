@@ -1,0 +1,49 @@
+# =============================================================================
+# Bangla Calendar (DinKhon) — .gitignore
+# Copyright 2026 SadmanWasi
+# SPDX-License-Identifier: Apache-2.0
+# =============================================================================
+
+# Gradle & Build Outputs
+.gradle/
+**/build/
+!**/src/**/build/
+gradle-app.setting
+
+# Local machine SDK configuration (NEVER commit)
+local.properties
+
+# Private Signing Keystores & Credentials (NEVER commit)
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+keystore.properties
+signing.properties
+release-keystore.*
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+output.json
+
+# Kotlin & Java temporary files
+.kotlin/
+*.class
+*.log
+*.hprof
+hs_err_pid*
+replay_pid*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,36 @@
+# Proposed Official F-Droid Metadata File (fdroiddata/metadata/dinkhon.sadmanwasi.app.yml)
+# Replace <YOUR_GITHUB_REPO_URL> and <RELEASE_COMMIT_HASH> once you push tag v1.0.0 to GitHub.
+
+Categories:
+  - Time
+License: Apache-2.0
+AuthorName: SadmanWasi
+WebSite: https://www.supportkori.com/sadmanwasi
+SourceCode: <YOUR_GITHUB_REPO_URL>
+IssueTracker: <YOUR_GITHUB_REPO_URL>/issues
+Changelog: <YOUR_GITHUB_REPO_URL>/blob/HEAD/CHANGELOG.md
+Donate: https://www.supportkori.com/sadmanwasi
+
+AutoName: DinKhon
+
+RepoType: git
+Repo: <YOUR_GITHUB_REPO_URL>.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 10
+    commit: <RELEASE_COMMIT_HASH_OR_TAG_v1.0.0>
+    subdir: app
+    gradle:
+      - yes
+
+# Optional Reproducible Builds configuration (enable after publishing a Linux-built
+# signed APK on GitHub Releases and extracting your 64-character hex certificate SHA-256
+# via `apksigner verify --print-certs`):
+# Binaries: <YOUR_GITHUB_REPO_URL>/releases/download/v%v/dinkhon-v%v-release.apk
+# AllowedAPKSigningKeys: <YOUR_64_CHAR_HEX_SIGNING_CERT_SHA256>
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 10

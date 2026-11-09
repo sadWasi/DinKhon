@@ -1,0 +1,4 @@
+• Initial stable public v1.0.0 release of DinKhon (দিনক্ষণ • বাংলা ক্যালেন্ডার) under Apache License 2.0.
+• Official 2019 Revised Bangladesh Bangla Academy calendar engine with instant Bangla | English toggle and two-way date converter.
+• Smooth 60/120Hz GPU-accelerated month swiping and transitions, Light (সাদা) & Dark (কালো) Liquid Glass themes, and Android 13+ Material You monochrome icon support.
+• 100% offline and privacy-first with zero permissions.

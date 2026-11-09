@@ -1,0 +1,16 @@
+DinKhon (দিনক্ষণ • বাংলা ক্যালেন্ডার) is a fast, 100% offline, ad-free, and open-source Bangladeshi Bangla and Gregorian calendar application for Android.
+
+Designed with a translucent Liquid Glass aesthetic, DinKhon implements the official 2019 Revised Bangladesh Bangla Academy Calendar (বঙ্গাব্দ) alongside a full English (Gregorian) calendar and instant two-way date conversion.
+
+Key Features:
+• Instant Bangla | English Toggle: Switch seamlessly between the Bangladeshi Bangla calendar (বঙ্গাব্দ) and the Gregorian calendar while preserving your exact selected date.
+• Official 2019 Revised Bangladesh Bangla Academy System:
+  - Boishakh to Ashwin (first 6 months): 31 days each.
+  - Kartik, Ogrohayon, Poush, Magh, and Choitro: 30 days each.
+  - Falgun: 29 days in standard years and 30 days in Gregorian leap years.
+  - Pohela Boishakh (1 Boishakh) always begins on 14 April.
+  - Uses Asia/Dhaka (BST, UTC+6) for accurate current-date detection.
+• Two-Way Date Converter & Quick Jump: Convert any historical or future date between Bangla and Gregorian calendars and jump directly to that month.
+• Bangladeshi Holidays & Observances: View national holidays, cultural festivals, seasonal celebrations (ষড়ঋতু), and Friday–Saturday Bangladesh weekends.
+• Liquid Glass UI & Themes: Supports System (সিস্টেম), Light (সাদা), and Dark (কালো) themes, bundled Noto Sans Bengali typography, and Android 13+ Material You themed icons.
+• 100% Offline & Privacy-First: Requests zero Android permissions (no INTERNET permission, no analytics, no tracking, and no advertisements).

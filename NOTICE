@@ -1,0 +1,25 @@
+Bangla Calendar
+Copyright 2026 SadmanWasi
+
+This project is licensed under the Apache License, Version 2.0.
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------
+Third-Party Component Notices
+-------------------------------------------------------------------------------
+
+1. Noto Sans Bengali Font (app/src/main/res/font/noto_sans_bengali.ttf)
+   Copyright The Noto Project Authors (https://github.com/notofonts/bengali)
+   Licensed under the SIL Open Font License, Version 1.1 (OFL-1.1).
+   https://openfontlicense.org
+
+2. AndroidX & Jetpack Compose Libraries
+   Copyright The Android Open Source Project
+   Licensed under the Apache License, Version 2.0.
+   https://www.apache.org/licenses/LICENSE-2.0
+
+3. Kotlin Standard Library & Coroutines
+   Copyright JetBrains s.r.o. and Kotlin Programming Language contributors
+   Licensed under the Apache License, Version 2.0.
+   https://www.apache.org/licenses/LICENSE-2.0
