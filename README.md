@@ -13,7 +13,7 @@
 **DinKhon (`দিনক্ষণ • বাংলা ক্যালেন্ডার` / Bangla Calendar)** is a fast, 100% offline, ad-free, and open-source native Android calendar application featuring an **Apple-inspired Liquid Glass** interface and the official **2019 Revised Bangladesh Bangla Academy Calendar (`বঙ্গাব্দ`)** with instant two-way **Bangla ↔ English (Gregorian)** date conversion.
 
 <p align="center">
-  <a href="https://github.com/sadWasi/DinKhon/releases/latest"><img src="https://img.shields.io/badge/⬇%20Download%20DinKhon-Latest%20Release-168BFF?style=for-the-badge" alt="Download DinKhon APK" /></a>
+  <a href="https://github.com/sadWasi/DinKhon/releases/download/v1.0.0/app-release.apk"><img src="https://img.shields.io/badge/⬇%20Download%20DinKhon-Download%20APK-168BFF?style=for-the-badge" alt="Download DinKhon APK" /></a>
 </p>
 
 <p align="center">Free • Open source • No ads • No internet permission</p>
