@@ -12,6 +12,12 @@
 
 **DinKhon (`দিনক্ষণ • বাংলা ক্যালেন্ডার` / Bangla Calendar)** is a fast, 100% offline, ad-free, and open-source native Android calendar application featuring an **Apple-inspired Liquid Glass** interface and the official **2019 Revised Bangladesh Bangla Academy Calendar (`বঙ্গাব্দ`)** with instant two-way **Bangla ↔ English (Gregorian)** date conversion.
 
+<p align="center">
+  <a href="https://github.com/sadWasi/DinKhon/releases/latest"><img src="https://img.shields.io/badge/⬇%20Download%20DinKhon-Latest%20Release-168BFF?style=for-the-badge" alt="Download DinKhon APK" /></a>
+</p>
+
+<p align="center">Free • Open source • No ads • No internet permission</p>
+
 - **Application ID (`package`):** `dinkhon.sadmanwasi.app`
 - **Current Release:** `1.0.0` (`versionCode = 10`)
 - **Creator:** **Sadman Wasi** ([SupportKori](https://www.supportkori.com/sadmanwasi) • [Facebook](https://www.facebook.com/s4dmanwasi))
@@ -77,13 +83,23 @@ Implements the official calendar rules adopted by the Government of the People's
 
 ## 📥 Download, Installation & F-Droid Availability
 
-### GitHub Releases
-Download the latest signed APK from the repository's **Releases** page, or build directly from source using the instructions below.
-See [`distribution/GitHub/RELEASE_SIGNING_GUIDE.md`](distribution/GitHub/RELEASE_SIGNING_GUIDE.md) for `SHA-256` checksum and `apksigner` signature verification instructions.
+### Download for Android
 
-### F-Droid Status
-- **F-Droid Compliance:** 100% compliant with the [Official F-Droid Inclusion Policy](https://f-droid.org/docs/Inclusion_Policy/) (zero proprietary dependencies, `dependenciesInfo` disabled, `Apache-2.0` licensed, Fastlane metadata included).
-- **Availability Status:** Prepared for submission to the official `fdroiddata` repository. See [`distribution/F-Droid/FDROID_SUBMISSION_GUIDE.md`](distribution/F-Droid/FDROID_SUBMISSION_GUIDE.md) and [`distribution/F-Droid/dinkhon.sadmanwasi.app.yml`](distribution/F-Droid/dinkhon.sadmanwasi.app.yml).
+<p align="center">
+  <a href="https://github.com/sadWasi/DinKhon/releases/latest"><img src="https://img.shields.io/badge/Download%20APK-GitHub%20Releases-168BFF?style=for-the-badge&logo=android&logoColor=white" alt="Download APK from GitHub Releases" /></a>
+</p>
+
+1. Open the **[latest GitHub Release](https://github.com/sadWasi/DinKhon/releases/latest)**.
+2. Under **Assets**, download the `.apk` file (not the source-code ZIP files).
+3. Open the downloaded APK on your Android phone and follow Android's installation prompt. You may need to allow your browser or file manager to install apps from that source.
+
+**Compatibility:** Android 8.0 (API 26) or newer.
+
+For checksum and APK-signature verification, see the [Release Signing & Verification Guide](distribution/GitHub/RELEASE_SIGNING_GUIDE.md).
+
+### F-Droid
+
+DinKhon is **not currently available on F-Droid**. Its initial inclusion request was closed because the project had not yet met F-Droid's three-month active-maintenance requirement. Development continues, and a future submission may be made once the policy requirements are met. See the [F-Droid Inclusion Policy](https://f-droid.org/docs/Inclusion_Policy/).
 
 ---
 
